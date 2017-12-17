@@ -30,5 +30,5 @@ app.listen(port, function() {
 // route our app
 
 app.get('/', function(req, res) {
-    res.send('hello');
+    res.send('hello world');
 });

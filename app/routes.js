@@ -16,7 +16,13 @@ router.get('/', function(req, res) {
 
 // route for our about page
 router.get('/about', function(req, res) {
-    res.render('pages/about');
+    var users = [
+        {name: 'Ann', email: 'annmartinez@knights.ucf.edu', avatar:'https://media.giphy.com/media/l1JLIJE0VXuxYRrri/giphy.gif'},
+        {name: 'Javier', email: 'javieraguilu@knights.ucf.edu', avatar:'https://media.giphy.com/media/l41Ym8O8dbIG0XvFK/giphy.gif'},
+        {name: 'Kristina', email: 'kristina@knights.ucf.edu', avatar:'https://media.giphy.com/media/3ohs7WiI1NF8Y3sHFm/giphy.gif'}
+    ];
+
+    res.render('pages/about', { users: users });
 });
 
 router.get('/contact', function(req, res) {

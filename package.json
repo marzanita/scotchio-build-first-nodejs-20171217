@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/marzanita/scotchio-build-first-nodejs-20171217#readme",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "express-ejs-layouts": "^2.3.1",
     "nodemon": "^1.13.3"
   }
 }

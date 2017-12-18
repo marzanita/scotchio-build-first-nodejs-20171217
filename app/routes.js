@@ -11,7 +11,7 @@ module.exports = router;
 // route for our homepage
 
 router.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('pages/home');
 });
 
 // route for our about page
@@ -23,5 +23,5 @@ router.get('/contact', function(req, res) {
     res.render('pages/contact');
 });
 router.post('/contact', function(req, res) {
-    
+
 });
